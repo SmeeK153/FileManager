@@ -9,13 +9,13 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.URLConnection;
 
-public class Buffer {
+public class StreamBuffer {
 	
-	private Buffer(){}
+	private StreamBuffer(){}
 	
 	public static void print(InputStream stream){
 		try {
-			System.out.println(Buffer.read(stream));
+			System.out.println(StreamBuffer.read(stream));
 		} catch (IOException e) {
 			System.err.println("Could not print requested stream, an exception occurred.");
 			e.printStackTrace();
